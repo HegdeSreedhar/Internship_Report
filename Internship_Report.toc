@@ -1,0 +1,42 @@
+\contentsline {chapter}{Contents}{3}{chapter*.2}%
+\contentsline {chapter}{List of Figures}{5}{chapter*.3}%
+\contentsline {chapter}{List of Tables}{6}{chapter*.4}%
+\contentsline {chapter}{\nonumberline List of Abbreviations}{7}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Literature Survey}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Communication technologies in Automotive Domain}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Role of Ethernet in the Automotive Domain}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Ethernet as backbone in vehicles}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Service Oriented Architecture}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Middleware technologies in automotive domain}{11}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}SOME/IP}{11}{subsection.2.5.1}%
+\contentsline {subsubsection}{\nonumberline Communication methods}{11}{subsubsection*.7}%
+\contentsline {chapter}{\numberline {3}Implementation}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Concept}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Environment}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Operating system}{16}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Target Hardware}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Virtual Machine}{16}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Raspiberry Pi 3b+}{16}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Odroid XU4}{16}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Software}{16}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Target Libraries}{16}{subsection.3.4.1}%
+\contentsline {subsubsection}{\nonumberline GENIVI vsomeip stack}{16}{subsubsection*.9}%
+\contentsline {subsubsection}{\nonumberline Other dependencies}{16}{subsubsection*.11}%
+\contentsline {subsection}{\numberline {3.4.2}Tools}{16}{subsection.3.4.2}%
+\contentsline {subsubsection}{\nonumberline Qt Creator}{16}{subsubsection*.13}%
+\contentsline {subsubsection}{\nonumberline CMake}{16}{subsubsection*.15}%
+\contentsline {subsubsection}{\nonumberline PuTTY}{16}{subsubsection*.17}%
+\contentsline {section}{\numberline {3.5}Cross-compilation}{17}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Installing cross compilers on the host machine}{17}{subsection.3.5.1}%
+\contentsline {subsubsection}{\nonumberline Installing Boost libraries}{18}{subsubsection*.19}%
+\contentsline {section}{\numberline {3.6}Demo Application}{18}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Server Application}{18}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Client Application}{18}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Comunication establishment between devices}{18}{subsection.3.6.3}%
+\contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}%
+\contentsline {subsection}{\numberline {4.0.1}Server Application Output}{19}{subsection.4.0.1}%
+\contentsline {subsection}{\numberline {4.0.2}Client Application Output}{19}{subsection.4.0.2}%
+\contentsline {subsection}{\numberline {4.0.3}Troubleshooting guide}{19}{subsection.4.0.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{20}{chapter.5}%
+\contentsline {chapter}{Bibliography}{21}{chapter*.20}%

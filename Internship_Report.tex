@@ -1,0 +1,279 @@
+%--------------------------------------------------------------------------------------%--------------------------------------------------------------------------------------
+%
+%  Global settings, dont change it! (excapt additional \usepackage commands)
+%  Always use PDFLatex!
+%
+%--------------------------------------------------------------------------------------%--------------------------------------------------------------------------------------
+\documentclass[a4paper, 12pt, oneside, BCOR1cm,toc=chapterentrywithdots]{scrbook}
+
+\usepackage{graphicx}           % use for pdfLatex
+\usepackage{makeidx} % f\"{u}r Benutzung des Befehls \printindex
+\usepackage[colorlinks=false]{hyperref}
+\usepackage{tocbibind}
+\usepackage{blindtext}
+\usepackage{subfigure} 
+\usepackage{acronym}
+
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+
+\hypersetup{%
+bookmarksnumbered=true, hyperindex=true,
+%
+%Im Acrobat Reader Subtitel 1. Ebene anzeigen
+bookmarksopen=true, bookmarksopenlevel=1,
+%
+pdfborder=0 0 0 % Keine Box um die Links!
+}
+
+% --------------------------------------------------------------
+% Force Tables and List to be added in Table of Content
+% --------------------------------------------------------------
+
+\renewcommand*{\tableofcontents}{%
+  	\begingroup
+  	\tocsection
+  	\tocfile{\contentsname}{toc}
+  	\endgroup
+}
+\renewcommand*{\listoffigures}{%
+  	\begingroup
+  	\tocsection
+  	\tocfile{\listfigurename}{lof}
+  	\endgroup
+}
+\renewcommand{\listoftables}{
+	\begingroup
+	\tocsection
+	\tocfile{\listtablename}{lot}
+	\endgroup
+}
+\begin{document}
+
+%--------------------------------------------------------------------------------------%--------------------------------------------------------------------------------------
+%
+%  Here starts the userspace !
+%
+%--------------------------------------------------------------------------------------%--------------------------------------------------------------------------------------
+
+%--------titlepage
+\begin{titlepage}
+
+{
+    \begin{center}
+        \raisebox{-1ex}{\includegraphics[scale=1.5]{TU_Chemnitz_positiv_gruen.pdf}}\\
+    \end{center}
+    \vspace{0.5cm}
+}
+
+\begin{center}
+
+\LARGE{\textbf{Realization of communication with SOME/IP stack over Ethernet}}\\
+\vspace{1cm}
+
+\Large{\textbf{Research Internship}}\\ 
+\vspace{1cm}
+
+Submitted in Fulfilment of the\\
+Requirements for the Academic Degree\\
+M.Sc.\\
+
+\vspace{0.5cm}
+Dept. of Computer Science\\
+Chair of Computer Engineering\\
+
+\end{center}
+\vspace{0.6cm}
+Submitted by: Sreedhar Hegde\\
+Student ID: 671453\\
+Submitted On: 12.04.2022\\
+\vspace{0.5cm}\\
+Supervising tutor: Prof. Dr. W. Hardt \\
+\vspace{0.5cm}\\
+Company Supervising tutor: MEng. Rick Podszuweit
+
+\end{titlepage}
+
+%---------------------------------------------------------
+% Abstract
+%---------------------------------------------------------
+
+\addchap*{Abstract}
+
+  
+
+%\textbf{Keywords: Keyword1, Keyword2, Keyword3, ...max 5}
+
+%---------------------------------------------------------
+% Table of Contents, List of figures, List of Tables
+%---------------------------------------------------------
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+%---------------------------------------------------------
+% List of Abbreviations
+%---------------------------------------------------------
+\twocolumn
+\addchap{List of Abbreviations}
+\begin{acronym}[Bash]
+ \acro{ADAS}{Advanced Driver Assistance
+Systems}
+\acro{ARP}{Address Resolution Protocol}
+\acro{ARXML}{AUTOSAR XML}
+ \acro{API}{Application Program Interface}
+ \acro{AUTOSAR}{Automotive Open System
+Architecture}
+\acro{AVB}{Audio Video Bridging}
+\acro{BSW}{Basic Software}
+ \acro{CAN}{Controller Area Network}
+ \acro{CRC}{Cyclic Redundancy Check}
+ \acro{DoIP}{Diognastic over IP}
+ \acro{ECU}{Electronic Control Unit}
+ \acro{Eth}{Ethernet}
+ \acro{EthIf}{Ethernet Interface}
+ \acro{EthTrcv}{Ethernet Transceiver}
+ \acro{IEEE}{Institute of Electrical and Electronics Engineers}
+\acro{IP}{Internet Protocol}
+\acro{ISO}{International Organization for
+Standardization}
+\acro{IVN}{In-vehicle Networking}
+\acro{MAC}{Media Access Control}
+\acro{MCAL}{Microcontroller Abstraction Layer}
+\acro{MDIO}{Management Data Input/Output}
+\acro{MII}{Media Independent Interface}
+ \acro{MOST}{Media Oriented Systems Transport}
+ \acro{OABR}{Open Alliance BroadR-Reach}
+ \acro{Open Alliance SIG}{OPEN (One-Pair Ethernet) Alliance Special Interest Group}
+  \acro{OEM}{Original Equipment Manufacturer}
+ \acro{OS}{Operating Systems}
+ \acro{OSI}{Open System Interconnection}
+ \acro{PDU}{Protocol Data Unit}
+ \acro{PHY}{Physical Layer}
+\acro{POSIX}{ Portable Operating System Interface}
+ \acro{RTE}{Runtime Environment}
+ \acro{SDU}{Service Data Unit}
+ \acro{SoAd}{Socket Adaptor}
+ \acro{SOME/IP}{Scalable service-Oriented MiddlewarE over IP}
+\acro{SWC}{Software Component}
+\acro{TCP}{Transmission Control Protocol}
+\acro{UDP}{User Datagram Protocol}
+\acro{V2X}{Vehicle-to-Anything communication}
+\end{acronym}
+
+\onecolumn
+%---------------------------------------------------------
+% Here starts the real work
+%---------------------------------------------------------
+
+\chapter{Introduction}
+\input{src/intro}  % Load Data from File intro.tex
+
+\chapter{Literature Survey}
+\input{src/literature_survey}
+
+\chapter{Implementation}
+\input{src/implementation}
+
+\chapter{Results}
+\input{src/results}
+
+\chapter{Conclusion}
+\input{src/conclusion}
+
+%\chapter{Tables}
+%\input{src/example_tables} % Load Data from File example_tables
+
+%\chapter{Figures}
+%\input{src/example_figures} % Load Data from File example_figures
+
+%\chapter{Referencing}
+% Alternativ just write your text under \chapter like this example
+
+%\blindtext \cite{autorenrichtlinien}
+
+%\blindtext \footnote{Here is an area for your Notes}
+
+%\blindtext \footnote{\cite{lnilatex} Seite 11}
+%\blindtext \cite{lnilatex}
+%\blindtext \cite{autorenrichtlinien,pepper1992grundlagen,chen2001audiovisual}
+
+
+%\chapter{Subchapter}
+
+%\section{sub 1}
+%\blindtext[3]
+%\section{sub 2}
+%\blindtext[3]
+%\subsection{sub 2.1}
+%\blindtext[3]
+
+%\subsection{sub 2.2}
+%\blindtext[3]
+
+%---------------------------------------------------------
+% bibliography based on Springer Design
+%---------------------------------------------------------
+
+%\bibliographystyle{splncs03}
+%\bibliography{bibliography}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\printindex
+
+\begin{thebibliography}{00}
+\bibitem{b1}Kozierok, C. M., Correa, C., Boatright, R. B., \& Quesnelle, J. (2014). Automotive Ethernet: The Definitive Guide. Intrepid Control Systems.
+
+\bibitem{b1.1}A. Ioana and A. Korodi, "VSOMEIP - OPC UA Gateway Solution for the Automotive Industry," 2019 IEEE International Conference on Engineering, Technology and Innovation (ICE/ITMC), 2019, pp. 1-6, doi: 10.1109/ICE.2019.8792619.
+
+\bibitem{b1.2}G. L. Gopu, K. V. Kavitha and J. Joy, "Service Oriented Architecture based connectivity of automotive ECUs," 2016 International Conference on Circuit, Power and Computing Technologies (ICCPCT), 2016, pp. 1-4, doi: 10.1109/ICCPCT.2016.7530358.
+
+\bibitem{b1.3}“Example for a Serialization Protocol (SOME/IP),” AUTOSAR Release 4.3.1, 31-Mar-2014. [Online]. Available: https:\url{//www.autosar.org/fileadmin/user\_upload/standards/classic/4-1/AUTOSAR\_TR\_SomeIpExample.pdf}. [Accessed: 06-Nov-2022]. 
+
+\bibitem{b1.4}Rumez, M., Grimm, D., Kriesten, R., \& Sax, E. (2020). An overview of automotive service-oriented architectures and implications for security countermeasures. IEEE access, 8, 221852-221870.
+
+\bibitem{b_putty}“Download Putty - a free SSH and telnet client for windows,” Download PuTTY - a free SSH and telnet client for Windows. [Online]. Available: https://www.putty.org/. [Accessed: 17-Mar-2022]. 
+
+\bibitem{b2} Steinbach, T., Korf, F., \& Schmidt, T. C. (2011, September). Real-time Ethernet for automotive applications: A solution for future in-car networks. In 2011 IEEE International Conference on Consumer Electronics-Berlin (ICCE-Berlin) (pp. 216-220). IEEE.
+
+
+\bibitem{b3} Han, S., \& Kim, H. (2016). On AUTOSAR TCP/IP performance in in-vehicle network environments. IEEE Communications Magazine, 54(12), 168-173.
+
+\bibitem{b4} Matheus, K., \& Königseder, T. (2017). A Brief History of “Ethernet” (from a Car Manufacturer's Perspective). In Automotive Ethernet(pp. 1-29). Cambridge: Cambridge University Press. doi:10.1017/9781316869543.003 
+
+\bibitem{b4_1}Matheus, K., \& Königseder, T. (2017). A Brief History of In-Vehicle Networking. In Automotive Ethernet(pp. 30-68). Cambridge: Cambridge University Press. doi:10.1017/9781316869543.004
+
+\bibitem{b_4_2}Matheus, K., \& Königseder, T. (2017). The Physical Transmission of Automotive Ethernet. In Automotive Ethernet (pp. 102-188). Cambridge: Cambridge University Press. doi:10.1017/9781316869543.006
+
+\bibitem{b5.0} Hank, P., Müller, S., Vermesan, O., \& Van Den Keybus, J. (2013, March). Automotive ethernet: in-vehicle networking and smart mobility. In 2013 Design, Automation \& Test in Europe Conference \& Exhibition (DATE) (pp. 1735-1739). IEEE.
+
+\bibitem{b5} Krishnadas, S. (2016). Concept and Implementation of AUTOSAR compliant Automotive Ethernet stack on Infineon Aurix Tricore board.
+
+\bibitem{b5_1}Kim, Y. (2011). Very low latency packet delivery requirements and problem statements. In IEEE 802.1 AVB Task Group Interim Meeting.
+
+\bibitem{b_6_0}Bo, H., Hui, D., Dafang, W., \& Guifan, Z. (2010, May). Basic concepts on AUTOSAR development. In 2010 International Conference on Intelligent Computation Technology and Automation (Vol. 1, pp. 871-873). IEEE.
+
+\bibitem{b_6_1}Wagner, M., Zobel, D., \& Meroth, A. (2014, September). Towards runtime adaptation in AUTOSAR: Adding Service-orientation to automotive software architecture. In Proceedings of the 2014 IEEE Emerging Technology and Factory Automation (ETFA) (pp. 1-7). IEEE.
+
+\bibitem{b6} AUTOSAR Release 4.3.1, “Layered Software Architecture”, 08-Dec-2017. [Online]. Available: \url{https://www.autosar.org/fileadmin/user\_upload/standards/classic/4-3/AUTOSAR_EXP_LayeredSoftwareArchitecture.pdf}, [Accessed: 05-May-2021]. 
+
+\bibitem{b7} AUTOSAR Release 4.3.1, “Specification of Ethernet Switch Driver,” 08-Dec-2017. [Online]. Available: \url{https://www.autosar.org/fileadmin/user_upload/standards/classic/4-3/AUTOSAR_SWS_EthernetSwitchDriver.pdf}. [Accessed: 11-May-2021].  
+
+\bibitem{b8}AUTOSAR Release 4.3.1, “Specification of TCP/IP Stack”, 08-Dec-2017. [Online]. Available: \url{https://www.autosar.org/fileadmin/user_upload/standards/classic/4-3/AUTOSAR_SWS_TcpIp.pdf}. [Accessed: 13-May-2021].
+
+\bibitem{b9} AUTOSAR Release 4.3.1. “Specification of Socket Adaptor”, 08-Dec-2017. [Online]. Available: \url{https://www.autosar.org/fileadmin/user_upload/standards/classic/4-3/AUTOSAR_SWS_SocketAdaptor.pdf}. [Accessed: 14-May-2021].
+
+\bibitem{b10}Abdelhamid, A. Y. A. (2018). Evaluation of a Control Protocol for Testing an Automotive Ethernet TCP/IP Stack.
+
+\bibitem{b11}Alliance, O. (2017). OPEN Alliance Automotive Ethernet ECU Test Specification. TC8 ECU, August, 23.
+
+\end{thebibliography}
+
+\end{document}
