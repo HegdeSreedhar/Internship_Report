@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Internship_Report.tex
 
 [Frame0_View0,0]
-TopLine=260
-Cursor=9528
+TopLine=99
+Cursor=3205
 
 [Frame1]
 Flags=0
@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=src\literature_survey.tex
 
 [Frame1_View0,0]
-TopLine=124
-Cursor=7972
+TopLine=46
+Cursor=5485
 
 [Frame2]
 Flags=0
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=src\implementation.tex
 
 [Frame2_View0,0]
-TopLine=17
-Cursor=2028
+TopLine=2
+Cursor=1280
 
 [Frame3]
 Flags=0
