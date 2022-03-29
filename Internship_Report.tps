@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1624
-NormalPos.bottom=593
+NormalPos.right=1547
+NormalPos.bottom=392
 Class=LaTeXView
 Document=Internship_Report.tex
 
 [Frame0_View0,0]
-TopLine=99
-Cursor=3205
+TopLine=136
+Cursor=4656
 
 [Frame1]
 Flags=0
@@ -29,13 +29,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1624
-NormalPos.bottom=593
+NormalPos.right=1547
+NormalPos.bottom=392
 Class=LaTeXView
 Document=src\literature_survey.tex
 
 [Frame1_View0,0]
-TopLine=46
+TopLine=47
 Cursor=5485
 
 [Frame2]
@@ -47,8 +47,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1624
-NormalPos.bottom=593
+NormalPos.right=1547
+NormalPos.bottom=392
 Class=LaTeXView
 Document=src\implementation.tex
 
@@ -65,8 +65,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1624
-NormalPos.bottom=593
+NormalPos.right=1547
+NormalPos.bottom=392
 Class=LaTeXView
 Document=src\communication_technologies_table.tex
 
@@ -83,8 +83,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1624
-NormalPos.bottom=593
+NormalPos.right=1547
+NormalPos.bottom=392
 Class=LaTeXView
 Document=src\intro.tex
 
@@ -94,5 +94,5 @@ Cursor=0
 
 [SessionInfo]
 FrameCount=5
-ActiveFrame=2
+ActiveFrame=0
 

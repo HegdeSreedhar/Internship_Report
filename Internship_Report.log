@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.11)  23 MAR 2022 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.11)  29 MAR 2022 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -618,19 +618,11 @@ Class scrbook Warning: \float@addtolists detected!
 
 
 LaTeX Warning: Hyper reference `acro:ADAS' on page 9 undefined on input line 13
-0.
+1.
 
 
 LaTeX Warning: Hyper reference `acro:ADAS' on page 9 undefined on input line 13
-0.
-
-
-LaTeX Warning: Hyper reference `acro:ARP' on page 9 undefined on input line 131
-.
-
-
-LaTeX Warning: Hyper reference `acro:ARP' on page 9 undefined on input line 131
-.
+1.
 
 
 LaTeX Warning: Hyper reference `acro:ARXML' on page 9 undefined on input line 1
@@ -681,12 +673,12 @@ LaTeX Warning: Hyper reference `acro:CAN' on page 9 undefined on input line 138
 .
 
 
-LaTeX Warning: Hyper reference `acro:CRC' on page 9 undefined on input line 139
-.
+LaTeX Warning: Hyper reference `acro:COVESA' on page 9 undefined on input line 
+139.
 
 
-LaTeX Warning: Hyper reference `acro:CRC' on page 9 undefined on input line 139
-.
+LaTeX Warning: Hyper reference `acro:COVESA' on page 9 undefined on input line 
+139.
 
 
 LaTeX Warning: Hyper reference `acro:DDS' on page 9 undefined on input line 140
@@ -769,27 +761,27 @@ LaTeX Warning: Hyper reference `acro:IVN' on page 9 undefined on input line 150
 .
 
 
-LaTeX Warning: Hyper reference `acro:LIN' on page 9 undefined on input line 151
+LaTeX Warning: Hyper reference `acro:JSON' on page 9 undefined on input line 15
+1.
+
+
+LaTeX Warning: Hyper reference `acro:JSON' on page 9 undefined on input line 15
+1.
+
+
+LaTeX Warning: Hyper reference `acro:LIN' on page 9 undefined on input line 152
 .
 
 
-LaTeX Warning: Hyper reference `acro:LIN' on page 9 undefined on input line 151
+LaTeX Warning: Hyper reference `acro:LIN' on page 9 undefined on input line 152
 .
 
 
-LaTeX Warning: Hyper reference `acro:MAC' on page 9 undefined on input line 152
+LaTeX Warning: Hyper reference `acro:MAC' on page 9 undefined on input line 153
 .
 
 
-LaTeX Warning: Hyper reference `acro:MAC' on page 9 undefined on input line 152
-.
-
-
-LaTeX Warning: Hyper reference `acro:MII' on page 9 undefined on input line 153
-.
-
-
-LaTeX Warning: Hyper reference `acro:MII' on page 9 undefined on input line 153
+LaTeX Warning: Hyper reference `acro:MAC' on page 9 undefined on input line 153
 .
 
 
@@ -801,139 +793,115 @@ LaTeX Warning: Hyper reference `acro:MOST' on page 9 undefined on input line 15
 4.
 
 
-LaTeX Warning: Hyper reference `acro:OABR' on page 9 undefined on input line 15
-5.
-
-
-LaTeX Warning: Hyper reference `acro:OABR' on page 9 undefined on input line 15
-5.
-
-
-LaTeX Warning: Hyper reference `acro:OEM' on page 9 undefined on input line 156
+LaTeX Warning: Hyper reference `acro:OEM' on page 9 undefined on input line 155
 .
 
 
-LaTeX Warning: Hyper reference `acro:OEM' on page 9 undefined on input line 156
+LaTeX Warning: Hyper reference `acro:OEM' on page 9 undefined on input line 155
 .
 
 
-LaTeX Warning: Hyper reference `acro:OS' on page 9 undefined on input line 157.
+LaTeX Warning: Hyper reference `acro:OS' on page 9 undefined on input line 156.
 
 
 
-LaTeX Warning: Hyper reference `acro:OS' on page 9 undefined on input line 157.
+LaTeX Warning: Hyper reference `acro:OS' on page 9 undefined on input line 156.
 
 
 
-LaTeX Warning: Hyper reference `acro:OSI' on page 9 undefined on input line 158
+LaTeX Warning: Hyper reference `acro:OSI' on page 9 undefined on input line 157
 .
 
 
-LaTeX Warning: Hyper reference `acro:OSI' on page 9 undefined on input line 158
+LaTeX Warning: Hyper reference `acro:OSI' on page 9 undefined on input line 157
 .
 
 
-LaTeX Warning: Hyper reference `acro:PDU' on page 9 undefined on input line 159
+LaTeX Warning: Hyper reference `acro:PDU' on page 9 undefined on input line 158
 .
 
 
-LaTeX Warning: Hyper reference `acro:PDU' on page 9 undefined on input line 159
+LaTeX Warning: Hyper reference `acro:PDU' on page 9 undefined on input line 158
 .
 
 
-LaTeX Warning: Hyper reference `acro:PHY' on page 9 undefined on input line 160
+LaTeX Warning: Hyper reference `acro:PHY' on page 9 undefined on input line 159
 .
 
 
-LaTeX Warning: Hyper reference `acro:PHY' on page 9 undefined on input line 160
+LaTeX Warning: Hyper reference `acro:PHY' on page 9 undefined on input line 159
 .
 
 
 LaTeX Warning: Hyper reference `acro:POSIX' on page 9 undefined on input line 1
-61.
+60.
 
 
 LaTeX Warning: Hyper reference `acro:POSIX' on page 9 undefined on input line 1
-61.
+60.
 
 
-LaTeX Warning: Hyper reference `acro:RPC' on page 9 undefined on input line 162
+LaTeX Warning: Hyper reference `acro:RPC' on page 9 undefined on input line 161
 .
 
 
-LaTeX Warning: Hyper reference `acro:RPC' on page 9 undefined on input line 162
+LaTeX Warning: Hyper reference `acro:RPC' on page 9 undefined on input line 161
 .
 
 
-LaTeX Warning: Hyper reference `acro:RTE' on page 9 undefined on input line 163
+LaTeX Warning: Hyper reference `acro:SOA' on page 9 undefined on input line 162
 .
 
 
-LaTeX Warning: Hyper reference `acro:RTE' on page 9 undefined on input line 163
+LaTeX Warning: Hyper reference `acro:SOA' on page 9 undefined on input line 162
 .
-
-
-LaTeX Warning: Hyper reference `acro:SDU' on page 9 undefined on input line 164
-.
-
-
-LaTeX Warning: Hyper reference `acro:SDU' on page 9 undefined on input line 164
-.
-
-
-LaTeX Warning: Hyper reference `acro:SOA' on page 9 undefined on input line 165
-.
-
-
-LaTeX Warning: Hyper reference `acro:SOA' on page 9 undefined on input line 165
-.
-
-
-LaTeX Warning: Hyper reference `acro:SoAd' on page 9 undefined on input line 16
-6.
-
-
-LaTeX Warning: Hyper reference `acro:SoAd' on page 9 undefined on input line 16
-6.
 
 
 LaTeX Warning: Hyper reference `acro:SOME/IP' on page 9 undefined on input line
- 167.
+ 163.
 
 
 LaTeX Warning: Hyper reference `acro:SOME/IP' on page 9 undefined on input line
- 167.
+ 163.
 
 
-LaTeX Warning: Hyper reference `acro:SWC' on page 9 undefined on input line 168
+LaTeX Warning: Hyper reference `acro:SOME/IP-SD' on page 9 undefined on input l
+ine 164.
+
+
+LaTeX Warning: Hyper reference `acro:SOME/IP-SD' on page 9 undefined on input l
+ine 164.
+
+
+LaTeX Warning: Hyper reference `acro:SWC' on page 9 undefined on input line 165
 .
 
 
-LaTeX Warning: Hyper reference `acro:SWC' on page 9 undefined on input line 168
+LaTeX Warning: Hyper reference `acro:SWC' on page 9 undefined on input line 165
 .
 
 
-LaTeX Warning: Hyper reference `acro:TCP' on page 9 undefined on input line 169
+LaTeX Warning: Hyper reference `acro:TCP' on page 9 undefined on input line 166
 .
 
 
-LaTeX Warning: Hyper reference `acro:TCP' on page 9 undefined on input line 169
+LaTeX Warning: Hyper reference `acro:TCP' on page 9 undefined on input line 166
 .
 
 
-LaTeX Warning: Hyper reference `acro:UDP' on page 9 undefined on input line 170
+LaTeX Warning: Hyper reference `acro:UDP' on page 9 undefined on input line 167
 .
 
 
-LaTeX Warning: Hyper reference `acro:UDP' on page 9 undefined on input line 170
+LaTeX Warning: Hyper reference `acro:UDP' on page 9 undefined on input line 167
 .
 
 
-LaTeX Warning: Hyper reference `acro:V2X' on page 9 undefined on input line 171
+LaTeX Warning: Hyper reference `acro:V2X' on page 9 undefined on input line 168
 .
 
 
-LaTeX Warning: Hyper reference `acro:V2X' on page 9 undefined on input line 171
+LaTeX Warning: Hyper reference `acro:V2X' on page 9 undefined on input line 168
 .
 
 [9
@@ -1065,82 +1033,93 @@ Overfull \hbox (17.81248pt too wide) in paragraph at lines 61--62
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[18]) [19]
+[18]
+<images/serverUI.png, id=308, 583.42969pt x 305.64188pt>
+File: images/serverUI.png Graphic file (type png)
+<use images/serverUI.png>
+Package pdftex.def Info: images/serverUI.png  used on input line 78.
+(pdftex.def)             Requested size: 426.7914pt x 223.58774pt.
+<images/clientUI.png, id=309, 593.96906pt x 286.82156pt>
+File: images/clientUI.png Graphic file (type png)
+<use images/clientUI.png>
+Package pdftex.def Info: images/clientUI.png  used on input line 86.
+(pdftex.def)             Requested size: 426.7914pt x 206.09996pt.
+) [19 <./images/serverUI.png>] [20 <./images/clientUI.png>]
 chapter 4.
-(src/results.tex) [20
+(src/results.tex) [21
 
 
 ]
 chapter 5.
 (src/conclusion.tex)
 No file Internship_Report.ind.
-[21
+[22
 
 
 ]
-Underfull \hbox (badness 1320) in paragraph at lines 244--245
+Underfull \hbox (badness 1320) in paragraph at lines 241--242
 \OT1/cmr/m/n/12 the Au-to-mo-tive In-dus-try," 2019 IEEE In-ter-na-tional Con-f
 er-ence on En-
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 244--245
+Underfull \hbox (badness 1137) in paragraph at lines 241--242
 \OT1/cmr/m/n/12 gi-neer-ing, Tech-nol-ogy and In-no-va-tion (ICE/ITMC), 2019, p
 p. 1-6, doi:
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 252--253
+Underfull \hbox (badness 3128) in paragraph at lines 249--250
 \OT1/cmr/m/n/12 31-Mar-2014. [On-line]. Avail-able: https:[]$\OT1/cmtt/m/n/12 /
  / www . autosar . org / fileadmin /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 \OT1/cmtt/m/n/12 user _ upload / standards / classic / 4-[]1 / AUTOSAR _ TR _ S
 omeIpExample . pdf$[]\OT1/cmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 5681) in paragraph at lines 256--257
+Underfull \hbox (badness 5681) in paragraph at lines 253--254
 []\OT1/cmr/m/n/12 COVESA, \Covesa/v-someip at 2.14.16," GitHub. [On-line]. Avai
 l-able:
  []
 
-[22
+[23
 
 
-] [23]
-Underfull \hbox (badness 1596) in paragraph at lines 283--284
+] [24]
+Underfull \hbox (badness 1596) in paragraph at lines 280--281
 \OT1/cmr/m/n/12 [On-line]. Avail-able: []$\OT1/cmtt/m/n/12 https : / / www . au
 tosar . org / fileadmin / user _ upload /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 \OT1/cmtt/m/n/12 standards / classic / 4-[]3 / AUTOSAR _ EXP _ LayeredSoftwareA
 rchitecture .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 \OT1/cmtt/m/n/12 upload / standards / classic / 4-[]3 / AUTOSAR _ SWS _ Etherne
 tSwitchDriver .
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 287--288
+Underfull \hbox (badness 1596) in paragraph at lines 284--285
 \OT1/cmr/m/n/12 [On-line]. Avail-able: []$\OT1/cmtt/m/n/12 https : / / www . au
 tosar . org / fileadmin / user _ upload /
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 289--290
+Underfull \hbox (badness 1596) in paragraph at lines 286--287
 \OT1/cmr/m/n/12 [On-line]. Avail-able: []$\OT1/cmtt/m/n/12 https : / / www . au
 tosar . org / fileadmin / user _ upload /
  []
 
-[24] (Internship_Report.aux)
+[25] (Internship_Report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1148,10 +1127,10 @@ Package rerunfilecheck Info: File `Internship_Report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 16393 strings out of 478659
- 285094 string characters out of 2855768
- 875823 words of memory out of 3000000
- 34120 multiletter control sequences out of 15000+600000
+ 16400 strings out of 478659
+ 285428 string characters out of 2855768
+ 874857 words of memory out of 3000000
+ 34126 multiletter control sequences out of 15000+600000
  410286 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,9n,106p,10614b,1396s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1163,9 +1142,9 @@ onts/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr17.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmsl12.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10
 .pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Internship_Report.pdf (24 pages, 509564 bytes).
+Output written on Internship_Report.pdf (25 pages, 553394 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 163 named destinations out of 1000 (max. 500000)
- 326 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 554 PDF objects out of 1000 (max. 8388607)
+ 162 named destinations out of 1000 (max. 500000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
 

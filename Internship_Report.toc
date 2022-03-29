@@ -34,9 +34,9 @@
 \contentsline {subsection}{\numberline {3.6.1}Server Application}{19}{subsection.3.6.1}%
 \contentsline {subsection}{\numberline {3.6.2}Client Application}{19}{subsection.3.6.2}%
 \contentsline {subsection}{\numberline {3.6.3}Comunication establishment between devices}{19}{subsection.3.6.3}%
-\contentsline {chapter}{\numberline {4}Results}{20}{chapter.4}%
-\contentsline {subsection}{\numberline {4.0.1}Server Application Output}{20}{subsection.4.0.1}%
-\contentsline {subsection}{\numberline {4.0.2}Client Application Output}{20}{subsection.4.0.2}%
-\contentsline {subsection}{\numberline {4.0.3}Troubleshooting guide}{20}{subsection.4.0.3}%
-\contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}%
-\contentsline {chapter}{Bibliography}{22}{chapter*.27}%
+\contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}%
+\contentsline {subsection}{\numberline {4.0.1}Server Application Output}{21}{subsection.4.0.1}%
+\contentsline {subsection}{\numberline {4.0.2}Client Application Output}{21}{subsection.4.0.2}%
+\contentsline {subsection}{\numberline {4.0.3}Troubleshooting guide}{21}{subsection.4.0.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{22}{chapter.5}%
+\contentsline {chapter}{Bibliography}{23}{chapter*.29}%
