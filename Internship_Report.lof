@@ -2,12 +2,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ethernet as a backbone for in-vehicle communication\cite {b1.0_EthBackbone}\relax }}{12}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces SOA representation with SOME/IP middleware\relax }}{14}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces SOME/IP communication types between clients and servers\relax }}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Simplified ISO/OSI model of Automotive Ethernet stack for communication control\relax }}{14}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces SOA representation with SOME/IP middleware\relax }}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces SOME/IP header format\cite {b_someip_spec}\relax }}{15}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces SOME/IP communication types between clients and servers\relax }}{16}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual representation of the hardware setup\relax }}{16}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces SOME/IP concept\relax }}{17}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Server application GUI\relax }}{19}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Client application GUI\relax }}{20}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual representation of the hardware setup\relax }}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces SOME/IP concept\relax }}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Qt based Server application GUI\relax }}{26}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Qt based Client application GUI\relax }}{27}{figure.caption.32}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
