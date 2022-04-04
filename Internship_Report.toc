@@ -32,7 +32,7 @@
 \contentsline {section}{\numberline {3.5}Demo Application}{21}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}vsomeip application}{21}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Server Application}{26}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Client Application}{27}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.3}Client Application}{26}{subsection.3.5.3}%
 \contentsline {subsection}{\numberline {3.5.4}Comunication establishment between devices}{27}{subsection.3.5.4}%
 \contentsline {chapter}{\numberline {4}Results}{28}{chapter.4}%
 \contentsline {subsection}{\numberline {4.0.1}Server Application Output}{28}{subsection.4.0.1}%
