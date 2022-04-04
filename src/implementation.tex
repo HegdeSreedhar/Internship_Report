@@ -34,12 +34,12 @@ Odroid XU4 is an energy-efficient powerful ARM-based computing hardware that can
 SOME/IP application development necessitates the use of several prerequisite stacks and libraries. This section contains a list of the required libraries as well as a brief overview of the libraries. All of the libraries used in this project are open source and can be used commercially. These libraries must be built for each target hardware in order for the applications to run on the devices. In this project, the target libraries are cross-compiled on the virtual machine, and the binaries are then copied to each of the devices. The following section goes over the specifics of cross-compilation.
 
 \subsubsection{GENIVI vsomeip stack}
-\subsubsection{CommonAPI}
-CommonAPI C++ is a standardized C++ API specification for the development of distributed applications which communicate via a middleware for interprocess communication\cite{b_commonapi}. The main intention is to make the C++ interface for applications independent from the underlying IPC stack\cite{b_commonapi}.
 
+\subsubsection{CommonAPI}
+CommonAPI C++ is a standardized C++ API specification for the development of distributed applications which communicate via a middleware for interprocess communication\cite{b_commonapi}. The main intention is to make the C++ interface for applications independent from the underlying IPC stack\cite{b_commonapi}. This library is a prerequisite in order to install vsomeip libraries. The installation process is simple and requires CMake build system for compilation.
 
 \subsubsection{Boost}
-
+Boost is an open source portable C++ source libraries intended to be widely useful and usable across spectrum of applications\cite{b_boost}. Several library functions within vsomeip stack are built based on the boost libraries and are a prerequisite for the smooth running of vsomeip stack based applications. 
 
 \subsection{Tools}
 \subsubsection{Qt Creator}
@@ -212,7 +212,6 @@ bool util_IsServiceAvailable(const vsomeip::service_t _service, const bool _is_a
         if(_is_available)
         {
             IsServiceAvailable_b = true;
-            isRPMservice_avalaible_ = true;
 						//Notify the thread related to RPM service once the service ID is available
             (void)RPMRequestThreadNotify();
         }
@@ -223,25 +222,69 @@ bool util_IsServiceAvailable(const vsomeip::service_t _service, const bool _is_a
 \end{lstlisting}
 
 \subsection{Server Application}
-The server user interface is depicted in Figure \ref{fig:serverUI}. Several different types of information are sent and received between the server and the client for demonstration purposes. The server sends the RPM, Speed, Fuel, and Indicator information to the client. The data for RPM, Speed, and Fuel can all be changed by using the vertical scroll bars. The progress bars represent the information that is dynamically updated. The Request-Response communication type is represented by the RPM information. It means that whenever the client makes a request, the server sends the most up-to-date RPM information to the client. Similarly, the Speed and Fuel information represent field-based event notifications from the server to the client. The information for the left and right indicators can be changed by using the respective buttons on the user interface. Whenever the value is updated, the data is sent out immediately with message type information set to "`MT\_NOTIFICATION"'. The information is sent as event notifications from the server sent to the client. A notification message with service identifier, instance identifier, the client identifier, message type, payload and other details is packed and triggered from the server. The TEMP variable indicates the ambient temperature. The data is sent as a request message from the client to the server, with no expectation of a response message from the server (fire \& forget communication type). The temperature data is stored in the server application and can be used for further processing.
+The server user interface is depicted in Figure \ref{fig:serverUI}. Several different types of information are sent and received between the server and the client for demonstration purposes. The server sends the RPM, Speed, Fuel, and Indicator information to the client. The data for RPM, Speed, and Fuel can all be changed by using the vertical scroll bars. The progress bars represent the information that is dynamically updated. The Request-Response communication type is represented by the RPM information. It means that whenever the client makes a request, the server sends the most up-to-date RPM information to the client. Similarly, the Speed and Fuel information represent field-based event notifications from the server to the client. The information for the left and right indicators can be changed by using the respective buttons on the user interface. Whenever the value is updated, the data is sent out immediately with message type information set to “MT\_NOTIFICATION”. The information is sent as event notifications from the server sent to the client. A notification message with service identifier, instance identifier, the client identifier, message type, payload and other details is packed and triggered from the server. The TEMP element indicates the ambient temperature. The data is sent as a request message from the client to the server, with no expectation of a response message from the server (fire \& forget communication type). The temperature data is stored in the server application and can be used for further processing.
 
 \begin{figure}[!htb]
 	\centering
-		\includegraphics[width=1\textwidth]{images/serverUI.png}
+		\includegraphics[width=1\textwidth,height=7cm]{images/serverUI.png}
 	\caption{Qt based Server application GUI}
 	\label{fig:serverUI}
 \end{figure}
 
 \subsection{Client Application}
-The client user interface is depicted in Figure \ref{fig:clientUI}. Similar to the server user interface, the client user interface consists of graphical elements that represent the information related to RPM, speed, temperature and fuel data. The information on the user interface is dynamically updated as and when the data is recieved from other vsomeip applications. However, the data for RPM is received only when the "`Request RPM"' button is pressed indicating a request for information being triggered to the server. The message type information is set as "`MT\_REQUEST"' indicating a request is placed to the server application. The server application then provides a response with the response message type set to "`MT\_RESPONSE"'.  Also, the ambient temperature value is set by the client and the data is sent to the server whenever the "`Send Current Temp"' button is pressed on the user interface. This information represents the fire \& forget communication type where the data is pushed to the server by the client without requesting any acknowledgment from the server. The receiver application gets this message with type information as "`MT\_REQUEST\_NO\_RETURN"' indicating no further response back to the sender is required.
+The client user interface is depicted in Figure \ref{fig:clientUI}. Similar to the server user interface, the client user interface consists of graphical elements that represent the information related to RPM, speed, temperature and fuel data. The information on the user interface is dynamically updated as and when the data is received from other vsomeip applications. However, the data for RPM is received only when the “Request RPM” button is pressed indicating a request for information being triggered to the server. The message type information is set as “MT\_REQUEST” indicating a request is placed to the server application. The server application then provides a response with the response message type set to “MT\_RESPONSE”.  In addition, the client sets the ambient temperature, and the data is sent to the server whenever the "Send Current Temp" button on the user interface is pressed. This data represents the fire \& forget communication type, in which the client pushes data to the server without requesting acknowledgement from the server. This message is received by the receiver application with the type information “MT REQUEST NO RETURN”, indicating that no further response to the sender is required.
 
 \begin{figure}[!htb] 
 
 	\centering
-		\includegraphics[width=1\textwidth]{images/clientUI.png}
+		\includegraphics[width=1\textwidth,height=6cm]{images/clientUI.png}
 	\caption{Qt based Client application GUI}
 	\label{fig:clientUI}
 \end{figure}
 
 \subsection{Comunication establishment between devices}
-Configuration
+The vsomeip stack uses the json format to represent the configuration parameters that are passed to the applications during startup. This configuration file is required when communication between applications running on multiple target hardware is required. This file contains the MAC address, the addressing type, i.e. whether it is a unicast or a multicast addressing scheme, the service IDs, instance IDs, event and event group IDs. It also includes the details of the service discovery, as well as the transport layer (TCP or UDP) and the application name used for the applications. In addition, within the configuration file, the configuration for logging trace data can be enabled or disabled. Before beginning, the proper environment must be created. To successfully establish communication, the proper environment must be set before running the application, and the path to the configuration file must be specified. Listing \ref{code:vsomeip_json} shows a small portion of the configuration file used for this project. The application ID can be assigned as per the user choice and has to be unique for each of the applications. The configuration file can be further scaled with additional parameters that are listed in the vsomeip documentation\cite{b_vsomeip_userguide}. 
+
+\begin{lstlisting}[language=json, caption={example of vsomeip configuration file - vsomeip.json}, label=code:vsomeip_json]
+{
+   "unicast" : "192.168.0.103",
+   "netmask" :"255.255.255.0",
+      "logging" :
+      { 
+         "level" : "debug",
+         "console" : "true",
+         "file" : { "enable" : "true", "path" : "/tmp/vsomeip.log" },
+         "dlt" : "false"
+      },
+      "applications" : 
+         [
+         {
+            "name" : "Demo_Application",
+            "id" : "0x1212"
+         }
+   ],
+      "services" :
+         [
+         {
+            "service" : "0x2000",
+            "instance" : "0x2100",
+            "unreliable" : "30509"           
+         }
+   ],
+      "routing" : "vsomeip_server",
+      "service-discovery" :
+      {
+         "enable" : "true",
+         "multicast" : "224.224.224.245",
+         "port" : "30490",
+         "protocol" : "udp",
+         "initial_delay_min" : "10",
+         "initial_delay_max" : "100",
+         "repetitions_base_delay" : "200",
+         "repetitions_max" : "5",
+         "ttl" : "3",
+         "cyclic_offer_delay" : "2000",
+         "request_response_delay" : "1500"
+      }
+}
+\end{lstlisting}
