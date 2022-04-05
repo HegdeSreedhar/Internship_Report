@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.11)  4 APR 2022 20:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.11)  4 APR 2022 22:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1008,36 +1008,36 @@ See the caption package documentation for explanation.
 
 
 ]
-<images/Switched_Ethernet_backbone.png, id=216, 652.25194pt x 332.19908pt>
+<images/Switched_Ethernet_backbone.png, id=222, 652.25194pt x 332.19908pt>
 File: images/Switched_Ethernet_backbone.png Graphic file (type png)
 <use images/Switched_Ethernet_backbone.png>
 Package pdftex.def Info: images/Switched_Ethernet_backbone.png  used on input l
 ine 14.
 (pdftex.def)             Requested size: 426.7914pt x 217.36642pt.
  [12 <./images/Switched_Ethernet_backbone.png>]
-<images/iso_osi_someip.png, id=237, 201.75375pt x 211.79124pt>
+<images/iso_osi_someip.png, id=243, 201.75375pt x 211.79124pt>
 File: images/iso_osi_someip.png Graphic file (type png)
 <use images/iso_osi_someip.png>
 Package pdftex.def Info: images/iso_osi_someip.png  used on input line 34.
 (pdftex.def)             Requested size: 108.4159pt x 113.80971pt.
  [13]
-<images/SOMEIP_Middleware.png, id=248, 783.92876pt x 419.5675pt>
+<images/SOMEIP_Middleware.png, id=254, 783.92876pt x 419.5675pt>
 File: images/SOMEIP_Middleware.png Graphic file (type png)
 <use images/SOMEIP_Middleware.png>
 Package pdftex.def Info: images/SOMEIP_Middleware.png  used on input line 43.
 (pdftex.def)             Requested size: 426.7914pt x 228.42607pt.
  [14 <./images/iso_osi_someip.png> <./images/SOMEIP_Middleware.png>]
-<images/someip_header_1.png, id=259, 710.655pt x 200.75pt>
+<images/someip_header_1.png, id=265, 710.655pt x 200.75pt>
 File: images/someip_header_1.png Graphic file (type png)
 <use images/someip_header_1.png>
 Package pdftex.def Info: images/someip_header_1.png  used on input line 55.
 (pdftex.def)             Requested size: 426.7914pt x 120.56732pt.
-<images/Request-response.png, id=262, 357.335pt x 251.94125pt>
+<images/Request-response.png, id=268, 357.335pt x 251.94125pt>
 File: images/Request-response.png Graphic file (type png)
 <use images/Request-response.png>
 Package pdftex.def Info: images/Request-response.png  used on input line 68.
 (pdftex.def)             Requested size: 213.39569pt x 150.45471pt.
-<images/fire-forget.png, id=263, 357.335pt x 251.94125pt>
+<images/fire-forget.png, id=269, 357.335pt x 251.94125pt>
 File: images/fire-forget.png Graphic file (type png)
 <use images/fire-forget.png>
 Package pdftex.def Info: images/fire-forget.png  used on input line 74.
@@ -1047,12 +1047,12 @@ Underfull \hbox (badness 1178) in paragraph at lines 75--75
 [][][]|\OT1/cmr/m/n/10.95 ``Fire & Forget"'- RPC: Method call
  []
 
-<images/Events.png, id=264, 372.39125pt x 241.90375pt>
+<images/Events.png, id=270, 372.39125pt x 241.90375pt>
 File: images/Events.png Graphic file (type png)
 <use images/Events.png>
 Package pdftex.def Info: images/Events.png  used on input line 80.
 (pdftex.def)             Requested size: 213.39569pt x 138.62479pt.
-<images/Field.png, id=265, 372.39125pt x 241.90375pt>
+<images/Field.png, id=271, 372.39125pt x 241.90375pt>
 File: images/Field.png Graphic file (type png)
 <use images/Field.png>
 Package pdftex.def Info: images/Field.png  used on input line 87.
@@ -1071,7 +1071,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 66--93
 ages/fire-forget.png> <./images/Events.png> <./images/Field.png>]
 chapter 3.
 (src/implementation.tex
-<images/Visual_representation_of_hardware_setup.png, id=286, 711.65875pt x 245.
+<images/Visual_representation_of_hardware_setup.png, id=292, 711.65875pt x 245.
 91875pt>
 File: images/Visual_representation_of_hardware_setup.png Graphic file (type png
 )
@@ -1083,7 +1083,7 @@ ed on input line 8.
 
 
  <./images/Visual_representation_of_hardware_setup.png>]
-<images/SOMEIP_concept.png, id=305, 1487.5575pt x 584.1825pt>
+<images/SOMEIP_concept.png, id=311, 1487.5575pt x 584.1825pt>
 File: images/SOMEIP_concept.png Graphic file (type png)
 <use images/SOMEIP_concept.png>
 Package pdftex.def Info: images/SOMEIP_concept.png  used on input line 17.
@@ -1107,13 +1107,13 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 84.
  [22] [23] [24]
 [25]
-<images/serverUI.png, id=508, 583.42969pt x 305.64188pt>
+<images/serverUI.png, id=514, 583.42969pt x 305.64188pt>
 File: images/serverUI.png Graphic file (type png)
 <use images/serverUI.png>
 Package pdftex.def Info: images/serverUI.png  used on input line 229.
 (pdftex.def)             Requested size: 426.79927pt x 199.16853pt.
  [26 <./images/serverUI.png>]
-<images/clientUI.png, id=519, 593.96906pt x 286.82156pt>
+<images/clientUI.png, id=525, 593.96906pt x 286.82156pt>
 File: images/clientUI.png Graphic file (type png)
 <use images/clientUI.png>
 Package pdftex.def Info: images/clientUI.png  used on input line 240.
@@ -1135,27 +1135,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ) [28]
 chapter 4.
 (src/results.tex
-<images/res_server_eth0.png, id=576, 1109.3445pt x 401.0985pt>
+<images/res_server_eth0.png, id=582, 1109.3445pt x 401.0985pt>
 File: images/res_server_eth0.png Graphic file (type png)
 <use images/res_server_eth0.png>
 Package pdftex.def Info: images/res_server_eth0.png  used on input line 6.
 (pdftex.def)             Requested size: 426.7914pt x 154.31017pt.
-<images/res_client_eth0.png, id=577, 826.88925pt x 364.36125pt>
+<images/res_client_eth0.png, id=583, 826.88925pt x 364.36125pt>
 File: images/res_client_eth0.png Graphic file (type png)
 <use images/res_client_eth0.png>
 Package pdftex.def Info: images/res_client_eth0.png  used on input line 15.
 (pdftex.def)             Requested size: 426.7914pt x 188.06233pt.
-) [29
+ [29
 
 
- <./images/res_server_eth0.png>] [30 <./images/res_client_eth0.png>]
+ <./images/res_server_eth0.png>]
+<images/troubleshooting_guide.png, id=591, 819.66225pt x 381.8265pt>
+File: images/troubleshooting_guide.png Graphic file (type png)
+<use images/troubleshooting_guide.png>
+Package pdftex.def Info: images/troubleshooting_guide.png  used on input line 2
+6.
+(pdftex.def)             Requested size: 426.7914pt x 198.8131pt.
+) [30 <./images/res_client_eth0.png> <./images/troubleshooting_guide.png>]
 chapter 5.
-(src/conclusion.tex)
-No file Internship_Report.ind.
-[31
+(src/conclusion.tex) [31
 
 
 ]
+No file Internship_Report.ind.
+[32]
 Underfull \hbox (badness 1320) in paragraph at lines 310--311
 \OT1/cmr/m/n/12 the Au-to-mo-tive In-dus-try," 2019 IEEE In-ter-na-tional Con-f
 er-ence on En-
@@ -1197,7 +1204,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--321
 omeIpExample . pdf$[]\OT1/cmr/m/n/12 .
  []
 
-[32
+[33
 
 
 ]
@@ -1224,7 +1231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--341
 []xu4-[]user-[]manual .
  []
 
-[33]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 348--349
 []\OT1/cmr/m/n/12 Covesa. (2020, Febru-ary 12). Vsomeip/v-somei-puser-guide at 
 mas-
@@ -1242,7 +1249,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 348--349
  / documentation /
  []
 
-[34] (Internship_Report.aux)
+[35] (Internship_Report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1253,10 +1260,10 @@ Package rerunfilecheck Info: File `Internship_Report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18078 strings out of 478659
- 314850 string characters out of 2855768
- 1074444 words of memory out of 3000000
- 35580 multiletter control sequences out of 15000+600000
+ 18092 strings out of 478659
+ 315183 string characters out of 2855768
+ 1074508 words of memory out of 3000000
+ 35589 multiletter control sequences out of 15000+600000
  410791 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,9n,106p,10614b,2031s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1273,9 +1280,9 @@ c/amsfonts/cm/cmr17.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
 Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb><D:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmtt12.pfb>
-Output written on Internship_Report.pdf (34 pages, 997716 bytes).
+Output written on Internship_Report.pdf (35 pages, 1064388 bytes).
 PDF statistics:
- 871 PDF objects out of 1000 (max. 8388607)
- 338 named destinations out of 1000 (max. 500000)
- 348 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 891 PDF objects out of 1000 (max. 8388607)
+ 342 named destinations out of 1000 (max. 500000)
+ 369 words of extra memory for PDF output out of 10000 (max. 10000000)
 
