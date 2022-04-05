@@ -1,3 +1,5 @@
+In-vehicle networking systems have evolved into a necessary component of modern automobiles. This chapter discusses a brief overview of communication technologies in the automotive domain, as well as an overview of the SOME/IP technology and the communication methods involved in it.
+
 \section{Communication technologies in Automotive Domain}
 More than 100 ECUs connect via in-vehicle buses in modern vehicles\cite{b1.0}. As a result, there is a greater need than ever for a dependable communication network with high bandwidth. In order to meet these requirements, BMW implemented Ethernet for the first time in vehicles in 2013. At the same time, it is important to note that the incorporation of Ethernet as an in-vehicle networking system does not imply that traditional communication networks such as CAN, LIN, and MOST are rendered obsolete. Because these networks are robust, inexpensive, time-tested, and provide necessary performance for many applications, Automotive Ethernet will not completely replace them, but will supplement them to provide even more cost, performance, and feature benefits. Table \ref{tab:Comparison_Automotive_Networks} shows the important characteristics of automotive networks in comparison with the Ethernet.
 \input{src/communication_technologies_table}
@@ -20,13 +22,13 @@ Traditionally, CAN, LIN, FlexRay, and MOST are used as in-vehicle communication 
 
 
 \section{Service Oriented Architecture}
-Automotive Ethernet has resulted in a paradigm shift in the development of automotive systems. Because scalability is one of the primary advantages of using Automotive Ethernet, newer protocols and technologies that provide smooth, flexible, and scalable software solutions are required. SOA is one of the tried-and-true web services technologies that can be applied in the automotive context to support the growing complexity of automotive software. Given the resource limitations of ECUs, the SOA protocols designed for high level machines and servers cannot be directly used for the automotive software. In order to bridge the gap and reuse the concepts of the existing SOA model, new protocols are needed to be developed. AUTOSAR provides a standardized specifications for a protocols such as SOME/IP and DDS which works by incorporating the concepts of the SOA model. The details of these technologies are discussed in the following section.   
+Automotive Ethernet has resulted in a paradigm shift in the development of automotive systems. Because scalability is one of the primary advantages of using Automotive Ethernet, newer protocols and technologies that provide smooth, flexible, and scalable software solutions are required. SOA is one of the tried-and-true web services technologies that can be applied in the automotive context to support the growing complexity of automotive software\cite{b1.2}. Given the resource limitations of ECUs, the SOA protocols designed for high level machines and servers cannot be directly used for the automotive software. In order to bridge the gap and reuse the concepts of the existing SOA model, new protocols are needed to be developed. AUTOSAR provides a standardized specifications for a protocols such as SOME/IP and DDS which works by incorporating the concepts of the SOA model. The details of these technologies are discussed in the following section.   
 
 \section{Middleware in the automotive domain}
 The increasing complexity in the automotive applications means there is a need for standardized middleware that can provide common services and common interfaces to the application software components\cite{b_TrendsInACS}. Middleware is a software layer that connects and manages application components running on distributed hosts\cite{b_middleware}. In practice, a middleware is composed of a collection of existing communication protocols and carmarker-specific layers\cite{b_TrendsInACS}. In the context of communication control, the middleware's role is to provide a layer of abstraction between the application software and the network.\cite{b1.4}. AUTOSAR has standardized specifications for middleware such as SOME/IP and DDS\cite{b_TrendsInACS}. Apart from this several other middleware based on CAN protocol such as eSOC\cite{b_TrendsInACS} are available for use in the automotive context. 
 
 \subsection{SOME/IP}
-``Scalable service Oriented MiddlewarE over IP" abbreviated SOME/IP represents a middleware that was created for automotive use cases \cite{b1.1}. The compatibility with AUTOSAR was a necessity regarding SOME/IP at least on wire-format level \cite{b1.1}. SOME/IP communication is an exchange of messages between different devices like ECUs over IP \cite{b1.1}. The SOME/IP protocol aims to define a uniform middleware for IP-based communication within vehicles. Figure \ref{fig:ISO_OSI_Model} represents the organization of the SOME/IP middleware in the ISO/OSI model.
+``Scalable service Oriented MiddlewarE over IP" abbreviated SOME/IP represents a middleware that was created for automotive use cases\cite{b1.1}. The compatibility with AUTOSAR was a necessity regarding SOME/IP at least on wire-format level \cite{b1.1}. SOME/IP communication is an exchange of messages between different devices like ECUs over IP\cite{b1.1}. The SOME/IP protocol aims to define a uniform middleware for IP-based communication within vehicles. Figure \ref{fig:ISO_OSI_Model} represents the organization of the SOME/IP middleware in the ISO/OSI model.
 \par  
 
 \begin{figure}[!htb]
@@ -36,7 +38,7 @@ The increasing complexity in the automotive applications means there is a need f
 	\label{fig:ISO_OSI_Model}
 \end{figure}
 
-The protocol builds on top of an existing TCP/UDP stack, adding another level of abstraction for application communication by enabling locality transparency. This property denotes the fact that an application has no knowledge of which network node provides the desired function or information. If the desired function or information is available on the same ECU, a local connection is established between the software components \cite{b1.4}. When the information, on the other hand, is on another node on the same network, the middleware performs the necessary network communication and provides the data to the application.
+The protocol builds on top of an existing TCP/UDP stack, adding another level of abstraction for application communication by enabling locality transparency. This property denotes the fact that an application has no knowledge of which network node provides the desired function or information. If the desired function or information is available on the same ECU, a local connection is established between the software components\cite{b1.4}. When the information, on the other hand, is on another node on the same network, the middleware performs the necessary network communication and provides the data to the application.
 
 \begin{figure}[!htb]
 	\centering
@@ -60,6 +62,18 @@ The SOME/IP header format is depicted in Figure \ref{fig:someip_header}. The hea
 
 \subsubsection{Communication methods}
 \label{sec:CommunicationMethods}
+The communication methods supported by SOME/IP technology are depicted in Figure \ref{fig:someip_communication_methods}. It primarily supports remote procedure calls and publish-subscribe communication. An overview of each of the communication patterns is discussed in this section.
+
+\begin{itemize}
+\item Request/Response method:
+Figure \ref{fig:Request-response} depicts the request-response method. The request is a message which calls a message on the server and the response is a message which returns the result of a method call\cite{b1.3}.
+\item Fire \& Forget method:
+Figure \ref{fig:fire-forget} depicts the fire \& forget method. The request is a message which calls a message on the server and no response is returned\cite{b1.3}.
+\item Event:
+Figure \ref{fig:Events} depicts the publish-subscribe events. To receive a notification, the client must be subscribed to the event. Even if the event is the same, a notification message is sent to the clients each time it occurs. An event does not have a status, an initial value, or a lifetime\cite{b1.3}.
+\item Field:
+Figure \ref{fig:Events} depicts the publish-subscribe fields. It is given a lifetime and an initial value. Each field has a get and a set method for reading and writing the current field value. The current field value is included in the response message. The server only sends an event notification when the field value changes\cite{b1.3}.
+\end{itemize}
 
 \begin{figure}[!htb]
 	%\centering
@@ -91,6 +105,7 @@ another service.}
 				\label{fig:Field}
 		\end{subfigure}
 	\caption{SOME/IP communication types between clients and servers}
+\label{fig:someip_communication_methods}
 \end{figure}
 
 

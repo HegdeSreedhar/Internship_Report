@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {2.4}Service Oriented Architecture}{13}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Middleware in the automotive domain}{13}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}SOME/IP}{13}{subsection.2.5.1}%
-\contentsline {subsubsection}{\nonumberline SOME/IP Message}{14}{subsubsection*.12}%
+\contentsline {subsubsection}{\nonumberline SOME/IP Message}{15}{subsubsection*.12}%
 \contentsline {subsubsection}{\nonumberline Communication methods}{15}{subsubsection*.15}%
 \contentsline {chapter}{\numberline {3}Implementation}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Concept}{17}{section.3.1}%
@@ -36,9 +36,9 @@
 \contentsline {subsection}{\numberline {3.5.4}Comunication establishment between devices}{27}{subsection.3.5.4}%
 \contentsline {chapter}{\numberline {4}Results}{29}{chapter.4}%
 \contentsline {subsection}{\numberline {4.0.1}Server Application Output}{29}{subsection.4.0.1}%
-\contentsline {subsection}{\numberline {4.0.2}Client Application Output}{29}{subsection.4.0.2}%
-\contentsline {subsection}{\numberline {4.0.3}Troubleshooting guide}{29}{subsection.4.0.3}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future scope}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{31}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future scope}{31}{section.5.2}%
-\contentsline {chapter}{Bibliography}{33}{chapter*.36}%
+\contentsline {subsection}{\numberline {4.0.2}Client Application Output}{30}{subsection.4.0.2}%
+\contentsline {subsection}{\numberline {4.0.3}Troubleshooting guide}{31}{subsection.4.0.3}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future scope}{32}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{32}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future scope}{32}{section.5.2}%
+\contentsline {chapter}{Bibliography}{34}{chapter*.36}%
